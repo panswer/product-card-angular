@@ -34,6 +34,12 @@
     align-items: center;
 }
 
+.container-footer>.btn:hover {
+    background-color: var(--color-neutral-very-dark-blue);
+    cursor: pointer;
+    opacity: .85;
+}
+
 .container-footer>.btn>span {
     margin-left: .5rem;
 }
