@@ -1,0 +1,29 @@
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .img-movil {
+        display: block;
+    }
+    .img-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        border-radius: 10px 0px 0px 10px;
+    }
+    .img-movil {
+        display: none;
+    }
+    .img-desktop {
+        display: block;
+        height: 100%;
+        width: auto;
+    }
+}

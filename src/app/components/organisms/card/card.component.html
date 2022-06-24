@@ -1,0 +1,6 @@
+<div class="card-root" *ngIf="item">
+    <app-card-img class="img"></app-card-img>
+    <app-card-head class="titles" title="{{item.name}}" category="{{item.category}}"></app-card-head>
+    <app-card-body class="body" description="{{item.description}}"></app-card-body>
+    <app-card-footer class="footer" [price]="item.price" [oldPrice]="item.oldPrice"></app-card-footer>
+</div>

@@ -1,0 +1,57 @@
+.container-footer {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "price old_price" "btn btn";
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer>.cost {
+    color: var(--color-primary-dark-cyan);
+    font-family: 'Fraunces Bold';
+    font-size: 2rem;
+}
+
+.container-footer>.old-cost {
+    text-decoration: line-through;
+    font-size: .8rem;
+}
+
+.container-footer>.btn {
+    background-color: var(--color-primary-dark-cyan);
+    border: 0;
+    color: var(--color-neutral-white);
+    padding: 1rem 0;
+    border-radius: 5px;
+    grid-column: 1, 2;
+    grid-area: btn;
+    margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+    font-weight: var(--font-weight2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer>.btn>span {
+    margin-left: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container-footer {
+        grid-template-columns: 2fr 1fr;
+    }
+    .container-footer>.cost {
+        font-size: 2.8em;
+    }
+    .container-footer>.old-cost {
+        font-size: 1.1rem;
+    }
+    .container-footer>.btn {
+        margin-top: 1.5rem;
+        height: 4rem;
+        align-self: center;
+        font-size: 1.25rem;
+    }
+}

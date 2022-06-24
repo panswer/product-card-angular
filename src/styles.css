@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+    ## Colors
+
+    ### Primary
+
+    - Dark cyan: hsl(158, 36%, 37%)
+    - Cream: hsl(30, 38%, 92%)
+
+    ### Neutral
+
+    - Very dark blue: hsl(212, 21%, 14%)
+    - Dark grayish blue: hsl(228, 12%, 48%)
+    - White: hsl(0, 0%, 100%)
+
+    ## Typography
+
+    ### Body Copy
+
+    - Font size (paragraph): 14px
+*/
+
+:root {
+    /* 
+        Colors
+    */
+    /* Primary */
+    --color-primary-dark-cyan: hsl(158, 36%, 37%);
+    --color-primary-cream: hsl(30, 38%, 92%);
+    /* Neutral */
+    --color-neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --color-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-neutral-white: hsl(0, 0%, 100%);
+    /* typography */
+    --font-size: 14px;
+    --font-weight1: 500;
+    --font-weight2: 700;
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('/assets/font/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Fraunces Bold';
+    src: url('/assets/font/Fraunces_48pt_Wonky-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/assets/font/Montserrat-VariableFont_wght.ttf');
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

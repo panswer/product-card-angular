@@ -1,0 +1,27 @@
+.header {
+    margin: 1rem;
+    padding-top: .5rem;
+}
+
+.header>.card-subtitle {
+    letter-spacing: .35rem;
+    text-transform: uppercase;
+}
+
+.header>.card-title {
+    font-family: 'Fraunces Bold';
+    font-weight: var(--font-weight2);
+    margin-top: .5rem;
+    font-size: 2rem;
+    color: var(--color-neutral-very-dark-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        margin: 2rem;
+    }
+    .header>.card-title {
+        font-size: 2.3rem;
+        margin-top: 1.5rem;
+    }
+}
